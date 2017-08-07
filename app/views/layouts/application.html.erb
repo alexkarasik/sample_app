@@ -3,7 +3,7 @@
   <head>
     <title><%= full_title(yield(:title)) %> </title>
     <%= csrf_meta_tags %>
-    # The following line uses a built-in Rails function (stylesheet_link_tag) to include application.css for all media types.
+  <!-- stylesheet_link_tag is a function that takes two arguments: a string, indicating the path to the stylesheet and a hash with two element indicating the media type and telling Rails to use the turbolinks feature. The results are inserted into the template by ERb -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>

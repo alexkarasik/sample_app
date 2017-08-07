@@ -1,0 +1,4 @@
+<%= csrf_meta_tags %>
+<!-- stylesheet_link_tag is a function that takes two arguments: a string, indicating the path to the stylesheet and a hash with two element indicating the media type and telling Rails to use the turbolinks feature. The results are inserted into the template by ERb -->
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
